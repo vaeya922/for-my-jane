@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <div class="container">
+            <div class="welcome-card">
+                <h1>Please state your name</h1>
+                <div class="input-container">
+                    <input type="text" id="name-input" placeholder="Enter your beautiful name...">
+                    <button id="submit-name" onclick="submitName()">Continue</button>
+                </div>
+            </div>
+        </div>
+        <div class="floating-hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+    </div>
+
+    <!-- Envelope Page -->
+    <div id="envelope-page" class="page">
+        <div class="container">
+            <div class="envelope-container">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <div class="letter-preview">
+                            <div class="letter-lines"></div>
+                            <div class="letter-lines"></div>
+                            <div class="letter-lines"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="open-button" id="open-envelope" onclick="openEnvelope()">Open This</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Letter Page -->
+    <div id="letter-page" class="page">
+        <div class="container">
+            <div class="letter-container">
+                <div class="letter">
+                    <div class="letter-header">
+                        <div class="letter-decoration"></div>
+                    </div>
+                    <div class="letter-content">
+                        <p class="greeting">Hi <span id="user-name"></span>,</p>
+                        <p>Hi, it’s me the one and only Bea in your life! I know it's kinda weird why I do this but I like doing things for you.</p>
+                        <p>I know for a fact that if you’re reading this right now, it means we’re on a call and I’m seeing you, so look at the camera and say hi to me first, hehe. Anyway, you’re probably wondering why I made this, mhmm? Well, I was just waiting for the perfect little moment to do all of this. And just like what we said the other day if you like someone, why not just go for it? It shouldn’t be put off any longer, right? And I know everything has its perfect timing, so I guess this is it. This is the time.</p>
+                        <p>First of all, I just want to say that I’m really thankful to have you in my life. Just like you said the other day you didn’t expect the plot twist of your life, especially now in 2025 and honestly, I feel the same. Falling in love with an amazing woman wasn’t on my bingo card, but hey here I am, loving you in the most genuine way I possibly can.</p>
+                        <p>I actually don’t really know where to start, so just imagine me right now, assessing and sorting all my thoughts, trying to put this together in the most organized way possible haha. Anyway, I know I haven’t said this to you until now, but I’m super interested in you. Every little thing I learn about you makes me fall even harder. It’s like knowing you more never makes me love you any less. I’m amazed by how sentimental and appreciative you are, you always notice and value even the little things people do for you. You carry wit in your words and compassion in your heart, a beautiful mix that I genuinely admire about you every single day.</p>
+                        <p>For now, what I know is I really love you. I never expected myself to be this committed to anyone, but here I am. I want you to feel safe, valued, and loved by me. I know you’re scared, and I wish I could just pull those thoughts out of your head and show you how safe you are with me, baby. You’re not a burden for feeling this way, it’s valid, and I’m not going anywhere just because things get a little hard. You don’t have to fight your thoughts alone. Let me be your safe space when your mind isn’t. I love you for who you are not for anything that came before, or might come after.</p>
+                        <p>Even when your thoughts try to push me away, I’ll keep holding your hand gently until your heart feels safe again.</p>
+                        <p>I don’t know what tomorrow holds, but if it has your hand in mine, I know it’s worth it. You're worth it, my jane.</p>
+                        <p>Now, I only have one question for you and it’s right there when you click the button.
+By this time, I don’t think you can see me on the camera anymore, cos right now while I’m making this i'm shaking (like u do the other night haha). But we’ll see. I want you to answer it on the call, okay? Before you click the option you’ll see in there. I love you, baby!</p>
+                        <div class="letter-signature">
+                            <p>With all my love,</p>
+                            <p class="signature">Bea ♡</p>
+                        </div>
+                    </div>
+                    <button class="continue-button" onclick="showProposal()">Click here if you're done reading</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proposal Page -->
+    <div id="proposal-page" class="page">
+        <div class="container">
+            <div class="proposal-container">
+                <div class="bouquet">
+                    <div class="flower">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="center"></div>
+                        <div class="stem"></div>
+                    </div>
+                    <div class="flower flower-2">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="center"></div>
+                        <div class="stem"></div>
+                    </div>
+                    <div class="flower flower-3">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="center"></div>
+                        <div class="stem"></div>
+                    </div>
+                    <div class="flower flower-4">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="center"></div>
+                        <div class="stem"></div>
+                    </div>
+                    <div class="flower flower-5">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="center"></div>
+                        <div class="stem"></div>
+                    </div>
+                </div>
+                <div class="proposal-note">
+                    <h2>Hi Lourdes Jane Gallandez,<br>Can you be my Girlfriend?</h2>
+                    <div class="answer-buttons">
+                        <button class="yes-button" onclick="handleAnswer('yes')">Yes! ♡</button>
+                        <button class="no-button" onclick="handleAnswer('no')">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Page -->
+    <div id="success-page" class="page">
+        <div class="container">
+            <div class="success-message">
+                <h1>YEYYYY!!! ♡</h1>
+                <p>It's finally official you're my GIRLFRIEND now ;-;</p>
+                <p class="date-text">06/30/25, the day you said yes to me hehe.</p>
+                <p class="love-message">I love you bigtime, my jane.</p>
+                <div class="celebration-hearts">
+                    <div class="heart big-heart"></div>
+                    <div class="heart big-heart"></div>
+                    <div class="heart big-heart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="falling-flowers">
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+            <div class="flower-fall"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

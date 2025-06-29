@@ -1,0 +1,16 @@
+{
+  "name": "romantic-proposal-website",
+  "version": "1.0.0",
+  "description": "A romantic proposal website with interactive elements",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/",
+    "start": "live-server --port=3000 --open=/"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "keywords": ["romantic", "proposal", "website", "interactive"],
+  "author": "",
+  "license": "MIT"
+}
